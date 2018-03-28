@@ -216,6 +216,8 @@ namespace GradeBook.GradeBooks
                 return 'F';
         }
 
+        public GradeBookType Type { get; set; }
+
         /// <summary>
         ///     Converts json to the appropriate grade book type.
         ///     Note: This method contains code that is not recommended practice.
