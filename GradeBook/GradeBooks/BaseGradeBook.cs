@@ -111,8 +111,11 @@ namespace GradeBook.GradeBooks
         {
             var additionalPoints = 0;
 
-            if (IsWeighted == true && studentType == StudentType.Honors || studentType == StudentType.DualEnrolled)
+            if (IsWeighted == true && (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled))
+            {
                 additionalPoints = 1;
+            }
+
 
             switch (letterGrade)
             {
